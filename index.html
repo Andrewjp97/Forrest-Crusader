@@ -279,18 +279,3 @@
         <script src="js/main.js"></script>
     </body>
 </html>
-<?php
-    if (isset($_POST['submit'])){
-        //header('Content-type: application/json');
-        $status = array(
-            'type'=>'success',
-            'message'=>'Email sent!'
-        );
-        $email = @trim(stripslashes($_POST['email']));
-        $email_from = $email;
-        $email_to = 'Andrewp97@me.com';
-        $body = 'Email: ' . $email . " Would Like to sign up for the newsletter";
-        $success = @mail($email_to, "Newsletter Sign Up", $body, 'From: <'.$email_from.'>');
-        die;
-    }
-    ?>
