@@ -2,6 +2,14 @@
 .clearfix {
   *zoom: 1;
 }
+code {
+  color: #34495e;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: #c5c5c5
+}
+
 .clearfix:before,
 .clearfix:after {
   display: table;
